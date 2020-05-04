@@ -5,4 +5,4 @@ for(let i=0;i<100; ++i) {
     sum = sum + a[i];
 }
 sum = sum/a.length;
-console.log(sum);
+console.log(sum); 

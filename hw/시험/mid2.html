@@ -4,7 +4,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <style>
         div#app {padding: 20px; margin: 30px auto; max-width: 400px; border:1px solid #ccc; box-shadow: 3px 3px 3px #aaa;}
-        span  { padding: 20px; margin: 30px auto; width: 50px ;height: 50px ;border: 1px solid gray; background-color: #ffa;}
+        span  { padding: 20px; margin: 30px auto; width: 40px ;height: 40px ;border: 1px solid gray; background-color: #ffa;}
     </style>
 </head>
 <body>
@@ -21,11 +21,11 @@
             },
             methods: {
                showing : function() {
-                    this.hide = false;
+                    this.hide = true;
                    
                },
                hiding : function(){
-                   this.hide = true;
+                   this.hide = false;
                }
             }
         })

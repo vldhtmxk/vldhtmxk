@@ -5,21 +5,21 @@
     <style>
          div#app {padding: 20px; margin: 30px auto; max-width: 400px; border:1px solid #ccc; box-shadow: 3px 3px 3px #aaa;}
          span {width: 50px ;height: 50px ;border: 1px solid gray; font-size: 12pt;}
-    </style> 
+    </style>
 </head> 
 <body>   
     <div id="app">     
-        <input type="text" v-model="number"/>
+        <input type="text" v-model="number" value ="0"/>
         <button type="button" v-on:click ="create">생성</button>
-        <sapn v-for ="s in box" v-show="visible">{{s}}</sapn>
+        <span v-for ="s in box" v-show="visible">{{s}}</span>
     </div>   
         <script type="text/javascript">     
         var app = new Vue({       
             el: '#app',       
             data: {   
-                number='',
+                number :0,
                 box : [],
-                visible = false
+                visible = ''
             }, 
             methods: {
                 create: function() {

@@ -9,7 +9,7 @@ function test_sum() {
     for(let i= 0 ;i<5;++i){
         arr[i] = Math.floor(Math.random()*10+1);
     }
-    console.log(arr);
+    console.log(arr); 
     console.log(amount(arr));
 }
 for(let i = 0 ; i<5;++i)
