@@ -1,18 +1,13 @@
-let a = [];
+let arr = [];
 
-for(let i=0;i<100; ++i) {
-a[i] = Math.floor(Math.random()*100+1);
+for(let i=0; i<100; ++i) {
+arr[i] = Math.floor(Math.random()*100+1);
 }
-for(let i = 0 ; i < a.length ;) {
-    if(a[i]%2 != 0) 
-        a.splice(i,1);
+let sum = arr.reduce(callback);
+console.log(sum);
+function callback(a,b) {
+    if(b%2==0)
+        return a+b;
     else
-        i++;
-        
-}
-a.sort(compareNumber);
-console.log(a);
-
-function compareNumber(i,j) {
-    return i-j;
+        return a;
 }

@@ -7,7 +7,7 @@ function amount(arr) {
 function test_sum() {
     let arr = [];
     for(let i= 0 ;i<5;++i){
-        arr[i] = Math.floor(Math.random()*100+10);
+        arr[i] = Math.floor(Math.random()*10+1);
     }
     console.log(arr);
     console.log(amount(arr));
