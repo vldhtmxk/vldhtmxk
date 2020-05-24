@@ -1,11 +1,9 @@
 
-
-
 let i = 0;
 function printTime(msg) {
     console.log(msg,new Date());
     ++i;
-    if(i == 10)
+    if(i == 3)
         clearInterval(id);
     
 }
